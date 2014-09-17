@@ -8,5 +8,5 @@ before_install:
 env:
   - EnableNuGetPackageRestore=true
 script:
-  - xbuild 
+  - xbuild Snowplow.Tracker/Snowplow.Tracker.sln
   - .ci/nunit.sh Tests/bin/Debug/Tests.dll
